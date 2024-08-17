@@ -25,6 +25,6 @@ stages:
         containerRegistry: 'docker'
         repository: 'nizarmlaouihi/my-repo'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: 'Dockerfile'  # Direct path since it's in the root
         tags: |
           $(tag)
